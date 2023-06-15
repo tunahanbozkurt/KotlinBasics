@@ -13,17 +13,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.kotlinbasics.ui.theme.KotlinBasicsTheme
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            KotlinBasicsTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
+            Greeting(name = "hello")
         }
     }
 }
